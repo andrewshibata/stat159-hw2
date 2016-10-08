@@ -23,4 +23,5 @@ report/report.pdf:
 
 #clean: removes report documents
 clean:
-	rm report/report.*
+	rm report/*.pdf
+	rm report/*.html
