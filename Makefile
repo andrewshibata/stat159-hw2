@@ -9,10 +9,12 @@ data:
 	cd data;curl http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv >> Advertising.csv
 
 #regression.RData
-regression.RData:regression-script.R Advertising.csv
+regression.RData:code/regression-script.R data/Advertising.csv
+	cd data;Rscript code/regression-script.R data/Advertising.csv
 
 #eda-output.txt
-eda-output.txt:eda-script.R Advertising.csv
+eda-output.txt:code/eda-script.R data/Advertising.csv
+	cd data;Rscript code/eda-script.R data/Advertising.csv
 
 #report.pdf
 report.pdf:report.Rmd regression.RData scatterplot-tv-sales.png
