@@ -1,0 +1,33 @@
+---
+title: 'Stat 159 Homework 2: Simple Regression Analysis'
+author: "Andrew Shibata"
+date: "October 7, 2016"
+output: html_document
+---
+
+```{r, echo=FALSE, message=FALSE}
+#Calling package for later use
+library(xtable)
+
+```
+\section{Abstract}
+
+This report reproduces the Advertising data visualization found in section 3.1 **Simple Linear Regression** of *An Introduction to Statistical Learning*. The concepts addressed in this assignment were using command line Rscripts and file output in R.
+
+\Section{Introduction}
+
+The Advertising data set explores the relationship between advertising budgets for different appliances and the resulting sales. This report conducts simple regression analysis to predict expected sales values as a function of TV advertising budget. 
+
+\section{Data}
+
+Here is the table representing the Advertising data set:
+```{r,echo=FALSE,results='asis'}
+load('../data/eda-output.txt')
+xtable(combined_summary,caption='Summary Statistics for Advertising')
+```
+
+\section{Methodology}
+
+\section{Results}
+
+\section{Conclusions}
