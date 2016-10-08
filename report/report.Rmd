@@ -57,7 +57,7 @@ table2 = matrix(nrow=3,ncol=2)
 Quantity = c('RSS','R2','F-stat')
 Value = c(lm_summary$sigma,lm_summary$r.squared,lm_summary$fstatistic[1])
 table2[,1] = Quantity
-table2[,2] = alue
+table2[,2] = Value
 colnames(table2) = c('Quantity', 'Value')
 xtable(table2,caption='Regression Quality Indices')
 ```
